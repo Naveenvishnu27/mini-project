@@ -9,7 +9,7 @@ class Employee {
     double deduction;
     double netSalary;
 
-    // Method to get employee details
+ 
     void getDetails() {
         Scanner sc = new Scanner(System.in);
 
@@ -24,7 +24,6 @@ class Employee {
         basicSalary = sc.nextDouble();
     }
 
-    // Method to calculate salary
     void calculateSalary() {
         hra = basicSalary * 0.20;      // 20% HRA
         da = basicSalary * 0.10;       // 10% DA
@@ -33,7 +32,6 @@ class Employee {
         netSalary = basicSalary + hra + da - deduction;
     }
 
-    // Method to display details
     void displayDetails() {
         System.out.println("\n----- Employee Salary Details -----");
         System.out.println("Employee ID      : " + empId);
